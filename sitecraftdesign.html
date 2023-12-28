@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tech Maestro</title>
+    <link rel="stylesheet" href="sitecraftstyle.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+         	<a href="index.html">
+                <img src="logo.png" alt="Data Tech Maestro Logo">
+            </a>
+            
+        </div>
+        <h1 class="header-title">DataTechMaestro</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content-container">
+    <div class="text-section">
+        <h1>Purpose</h1>
+        <p>SiteCraft Design offers cutting-edge web and graphic design solutions tailored to bring your digital presence to life. Whether it's creating an engaging interface or coding with precision in HTML, CSS, and JavaScript, SiteCraft design ensure your brand stands out</p>
+    </div>
+    <div class="image-section">
+        <img src="artimage.jpg" alt="Descriptive Alt Text">
+    </div>
+</div>
+    
+	<!-- ><div class="sitecraft-section">
+  		<!--<h1>SiteCraft Designs</h1> --
+  		<p>SiteCraft Design offers cutting-edge web and graphic design solutions tailored to bring your digital presence to life. Whether it's creating an engaging interface or coding with precision in HTML, CSS, and JavaScript, SiteCraft design ensure your brand stands out.</p>
+	</div> -->
+    
+    <div class="main-content">
+        <!-- Main content goes here --> 
+        
+        <div class="gallery-section">
+    		<h2>Gallery</h2>
+        <div class="gallery-grid">
+        <!-- Update Item -->
+        <div class="gallery-item">
+            <img src="blkmanwomen.png" alt="Site Craft Design">
+           <!-- <h3>SiteCraft Design</h3> 
+            <p >Custom GPT 4 Model for website design and custom graphics </p>
+            <!-- <p class="gallery-date">Nov 21, 2023</p>*/-->
+        </div>
+        <div class="gallery-item">
+            <img src="sportstatai.png" alt="Sport stat Ai">
+           <!-- <h3>SportStat Ai</h3>
+            <p >Custom GPT 4 Model for all sports statistics</p>
+            <!-- <p class="gallery-date">Nov 21, 2023</p>*/ -->
+        </div>
+        <div class="gallery-item">
+            <img src="animalstotherescue.png" alt="Machines save the world">
+           <!-- <h3>SportStat Ai</h3>
+            <p >Custom GPT 4 Model for all sports statistics</p>
+            <!-- <p class="gallery-date">Nov 21, 2023</p>*/ -->
+        </div>
+    
+        
+</div>   
+
+<script>
+// When the user scrolls the page, execute the function
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  // Get the header
+  var header = document.querySelector("header");
+  // Set the scroll distance before changing the color
+  var scrollTrigger = 50; // px
+
+  if (document.body.scrollTop > scrollTrigger || document.documentElement.scrollTop > scrollTrigger) {
+    // If the page is scrolled more than 100px, add the "header-scrolled" class to the header
+    header.classList.add("header-scrolled");
+  } else {
+    // Otherwise, remove the "header-scrolled" class from the header
+    header.classList.remove("header-scrolled");
+  }
+}
+</script>
+
+	<footer class="site-footer">
+       <p>&copy; 2023 Data Tech Maestro. All rights reserved.</p>
+    </footer>
+     
+</body>
+</html>
