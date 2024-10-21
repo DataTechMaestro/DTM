@@ -1,0 +1,184 @@
+/* Resetting default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'montserrat', sans-serif;
+    background-color: #fff; /* Added background color */
+    color: #333333; /* This sets the text color to white for contrast */
+    /* ... other styles ... */
+}
+
+header {
+   /* background-color: #65737e; /* Header background */
+    font-family:  'Playfair Display', Georgia, serif;
+    color: #000;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  /*  background-color: #333; /* Or any color you prefer */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    /* Rest of your styles for .site-header */
+}
+
+.header-title {
+    font-size: 14px; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the title bold */
+    margin: 0; /* Removes default margin from h1 */
+    /* Additional styles if needed */
+    position: absolute;
+    left: 10%;
+}
+
+.logo {
+    position: absolute; /* Position logo absolutely to the top left */
+    left: 6.5%;
+    top: 0px;
+}
+
+.logo img {
+    height: 3.9vw; /* Adjust the size as necessary */
+}
+
+/* Add this style to remove underline from logo link */
+.logo a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li { /* Adjust spacing in header line */
+    padding: 0 20px;
+}
+
+.navigation ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.header-scrolled {
+    background-color: #fff; /* or any color you wish to change to */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+
+.main-content {
+  background: url('possiblebackground.png') no-repeat center center; 
+  background-size: cover;
+  color: #000; /* Color of the text */
+  background-color: #FFF;
+  text-align: left;
+  padding: 300px 50px; /* Adjust the padding as needed */
+  margin-top: 0px;
+}
+
+/* Add responsive design and other styling as needed */
+
+}
+/* Updates Section Styles */
+.updates-section {
+    /*background: url('goldbackground.jpg') no-repeat center center; */
+    background-size: cover;
+   /* background-color: #f5f7f9; /* Light background for the section */
+    padding: 30px; 
+    text-align: center; /* Center-align the heading and view all link */
+}
+
+.updates-section h2 {
+    margin-bottom: 20px;
+}
+
+.updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding-bottom: 20px; /* Space below the grid */
+}
+
+.update-item {
+    background-color: #fff; /* White background for each item */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+}
+
+.update-item img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.update-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px; /* Space below the title */
+}
+
+.update-date {
+    font-size: 0.9em;
+    color: #666; /* A darker grey for the date */
+}
+
+.about-section {
+  background: url('goldbackground.jpg') no-repeat center center;
+  background-size: cover;
+  color: #000; /* Color of the text */
+  background-color: #FFF;
+  text-align: left;
+  padding: 300px 50px; /* Adjust the padding as needed */
+  margin-top: 0px;
+}
+
+.about-section h1 {
+  font-size: 3em; /* Large font size for the About title */
+  margin-bottom: 0em; /* Space between the title and paragraph */
+  color: #FFA500; /* A golden color similar to the one in the image */
+}
+
+.about-section p {
+  font-size: 1.2em; /* Slightly larger font size for the paragraph */
+  max-width: 800px; /* Maximum width of the paragraph */
+  margin: 0 auto; /* Center the paragraph if it's less than the max width */
+}
+
+.update-item a.update-link {
+    display: block;
+    color: inherit; /* This makes sure the text inside the link uses the inherited text color */
+    text-decoration: none; /* This removes the underline from the link */
+}
+
+.update-item a.update-link:hover,
+.update-item a.update-link:focus {
+    background-color: #a7adba; /* This changes the background color on hover for visual feedback */
+    outline: none; /* This removes the outline that browsers might add on focus */
+}
+
+
+
+.view-all-updates {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for the button/link */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+

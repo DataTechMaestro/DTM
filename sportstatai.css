@@ -1,0 +1,147 @@
+/* Resetting default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #195F5D; /* Added background color */
+    color: #fff; /* This sets the text color to white for contrast */
+    /* ... other styles ... */
+}
+
+header {
+   /* background-color: #65737e; /* Header background */
+    font-family:  'Playfair Display', Georgia, serif;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  /*  background-color: #333; /* Or any color you prefer */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    /* Rest of your styles for .site-header */
+}
+
+.header-title {
+    font-size: 14px; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the title bold */
+    margin: 0; /* Removes default margin from h1 */
+    /* Additional styles if needed */
+    position: absolute;
+    left: 10%;
+}
+
+.logo {
+    position: absolute; /* Position logo absolutely to the top left */
+    left: 6.5%;
+    top: 0px;
+}
+
+.logo img {
+    height: 3.9vw; /* Adjust the size as necessary */
+}
+
+/* Add this style to remove underline from logo link */
+.logo a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li { /* Adjust spacing in header line */
+    padding: 0 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.header-scrolled {
+    background-color: #000; /* or any color you wish to change to */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.main-content {
+    color: #fff; /* Content color */
+    background-color: #0A7B80; /* Content background */
+    padding: 40px 5%;
+}
+
+/* Add responsive design and other styling as needed */
+
+.content-container {
+    display: flex;
+    align-items: center; /* This aligns items vertically in the middle */
+    justify-content: center; /* This centers items horizontally */
+    padding: 130px 10%;; /* Add padding as needed */
+    margin-top: 35px;
+    margin-bottom: -50px;
+    
+}
+
+.text-section {
+    flex: 1; /* Allows this section to grow */
+    padding-right: 20px; /* Adds spacing between text and image */
+}
+
+.image-section {
+    flex: 1; /* Allows this section to grow */
+}
+
+.image-section img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack them on top of each other on small screens */
+    }
+}
+
+.site-footer {
+    text-align: right; /* Align text to the right */
+    background-color: #000; /* Change as needed */
+    color: #fff; /* Change as needed */
+    padding: 10px;
+    margin-top: 200px; /* Push footer to the bottom */
+}
+
+/* Ensure the body and html take up the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Ensuring main content pushes the footer down */
+.main-content {
+    min-height: calc(100vh - /* Height of your footer */); 
+}
+
+/* Optional: Responsive adjustment for smaller screens */
+@media screen and (max-width: 600px) {
+    .site-footer {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+}
+
+
