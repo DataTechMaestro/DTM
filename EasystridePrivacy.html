@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyStride – Privacy Disclosure</title>
+    <style>
+      /* ---------- Root Variables ---------- */
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #1f1f1f;
+        --accent-color: #0b7e7e;
+        --muted-text: #555;
+        --table-border: #e2e8f0;
+        --card-bg: #fafafa;
+        --code-bg: #f3f4f6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #0f172a;
+          --text-color: #f1f5f9;
+          --accent-color: #2dd4bf;
+          --muted-text: #9ca3af;
+          --table-border: #334155;
+          --card-bg: #1e293b;
+          --code-bg: #1e252f;
+        }
+      }
+
+      /* ---------- Global Styles ---------- */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 2rem 1rem;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1.25;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+        color: var(--accent-color);
+      }
+      h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.375rem;
+      }
+      p,
+      li,
+      td {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+      }
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ---------- Layout ---------- */
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      .muted {
+        color: var(--muted-text);
+        font-style: italic;
+      }
+
+      /* ---------- Table ---------- */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+      }
+      th,
+      td {
+        border: 1px solid var(--table-border);
+        padding: 0.75rem 0.5rem;
+        vertical-align: top;
+      }
+      th {
+        background-color: var(--card-bg);
+        text-align: left;
+      }
+
+      /* ---------- Notice Card ---------- */
+      .notice {
+        background: var(--card-bg);
+        padding: 1rem 1.25rem;
+        border-left: 4px solid var(--accent-color);
+        margin-bottom: 1.5rem;
+      }
+
+      /* ---------- Footer ---------- */
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--table-border);
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Privacy Disclosure</h1>
+      <p class="muted">Effective Date: 06 July 2025</p>
+
+      <p>
+        Welcome to <strong>EasyStride</strong> (“the <strong>App</strong>”). We
+        respect your privacy and are committed to protecting any personal data
+        you entrust to us. This Privacy Disclosure explains
+        <em>what information we collect, how it is processed entirely on your
+        device, and the rights you have</em> under applicable privacy laws such
+        as the Connecticut Data Privacy Act (CTDPA), California Consumer
+        Privacy Act as amended by the CPRA (CCPA/CPRA), and the European Union
+        General Data Protection Regulation (GDPR).
+      </p>
+
+      <h2 id="core-principles">1. Our Core Privacy Principles</h2>
+      <ol>
+        <li><strong>On‑Device Processing First</strong> – All activity data is processed locally on your device by default.</li>
+        <li><strong>No Unnecessary Collection</strong> – We only collect data needed to provide core functionality.</li>
+        <li><strong>No Sale or Sharing</strong> – We do <em>not</em> sell, rent, or share your personal data with third parties for advertising or any other purpose.</li>
+        <li><strong>Transparency &amp; Control</strong> – You have clear in‑app settings to export, delete, or turn off data collection features.</li>
+      </ol>
+
+      <h2 id="info-we-collect">2. Information We Collect &amp; Why</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Activity Data</strong></td>
+            <td>Steps, distance, workout sessions, custom goals</td>
+            <td>Calculate progress and display metrics</td>
+            <td>Stored securely in an encrypted local database on your device</td>
+          </tr>
+          <tr>
+            <td><strong>Device Data</strong></td>
+            <td>Device model, OS version, language, time‑zone</td>
+            <td>Ensure compatibility and optimize performance</td>
+            <td>Stored locally; included in crash logs if you opt‑in</td>
+          </tr>
+          <tr>
+            <td><strong>Diagnostics (Optional)</strong></td>
+            <td>Crash reports, anonymized performance metrics</td>
+            <td>Identify bugs &amp; improve stability</td>
+            <td>Processed on‑device; you choose if summaries are shared</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="notice">
+        <strong>Note:</strong> No raw activity or personally identifying data
+        ever leaves your device unless you explicitly export it.
+      </div>
+
+      <h2 id="processing">3. How We Process Data</h2>
+      <ul>
+        <li><strong>Real‑time Analytics</strong> – Movement and sensor data are analysed by on‑device algorithms to compute streaks, caloric burn, and other statistics.</li>
+        <li><strong>Personalisation</strong> – Your past activity is referenced locally to tailor motivational prompts.</li>
+        <li><strong>Optional Cloud Back‑Up</strong> – If you enable iCloud/Google Drive backup through your OS, encrypted files may be synced per your platform provider’s terms.</li>
+      </ul>
+
+      <h2 id="permissions">4. Permissions We Request</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Reason</th>
+            <th>Can You Decline?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motion &amp; Fitness / Physical Activity</td>
+            <td>Access accelerometer &amp; gyroscope for step counting</td>
+            <td>Yes, but most features will not work</td>
+          </tr>
+          <tr>
+            <td>Notifications</td>
+            <td>Send motivational reminders</td>
+            <td>Yes – manage in system settings</td>
+          </tr>
+          <tr>
+            <td>File Storage</td>
+            <td>Export or back‑up your data in .CSV / .JSON</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>We never request Bluetooth, Location, Contacts, or Advertising IDs.</p>
+
+      <h2 id="retention">5. Data Retention &amp; Deletion</h2>
+      <ul>
+        <li>All data remains on your device until you delete the App or use <strong>Settings → Delete My Data</strong>.</li>
+        <li>Back‑ups you create remain under your control via your chosen storage provider.</li>
+      </ul>
+
+      <h2 id="security">6. Security Measures</h2>
+      <ul>
+        <li><strong>Encryption‑at‑Rest:</strong> Activity database is encrypted using AES‑256.</li>
+        <li><strong>Encryption‑in‑Transit:</strong> If you opt‑in to send diagnostics, they are transmitted over TLS 1.3.</li>
+        <li><strong>Secure Coding:</strong> We follow OWASP Mobile Security guidelines and perform regular penetration testing.</li>
+      </ul>
+
+      <h2 id="rights">7. Your Privacy Rights</h2>
+      <p>Depending on where you live, you may have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> – Obtain a copy of your data.</li>
+        <li><strong>Portability</strong> – Export data in a machine‑readable format.</li>
+        <li><strong>Correction</strong> – Fix inaccuracies.</li>
+        <li><strong>Deletion</strong> – Permanently erase data.</li>
+        <li><strong>Opt‑Out</strong> – Object to processing or sharing (CTDPA/CCPA) – Already default in this App.</li>
+      </ul>
+      <p>
+        Request exercise: Use <strong>Settings → Privacy → Request</strong> or
+        email <a href="mailto:datatechmaestro@gmail.com">datatechmaestro@gmail.com</a>. We will respond within 45 days.
+      </p>
+
+      <h2 id="children">8. Children’s Privacy</h2>
+      <p>
+        The App is <strong>not intended for children under 13</strong> and does
+        not knowingly collect data from them. If you believe we have collected
+        data from a minor, please contact us for deletion.
+      </p>
+
+      <h2 id="changes">9. Changes to This Disclosure</h2>
+      <p>
+        We may update this Privacy Disclosure to reflect legal or operational
+        changes. We will notify you <em>in‑app</em> and update the “Effective
+        Date” above.
+      </p>
+
+      <h2 id="contact">10. Contact Us</h2>
+      <address>
+        <p><strong>Privacy Officer</strong></p>
+        <p>Data Tech Maestro<br /><!--123 Main Street, New Haven, CT 06510, USA</p> -->
+        <p>Email: <a href="mailto:datatechmaestro@gmail.com">datatechmaestro@gmail.com</a></p>
+      </address>
+
+      <footer>
+        <p>© 2025 EasyStride. All rights reserved.</p>
+        <p class="muted">Thank you for trusting EasyStride with your activity data.</p>
+      </footer>
+    </main>
+  </body>
+</html>
